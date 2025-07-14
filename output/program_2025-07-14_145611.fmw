@@ -1,0 +1,268 @@
+.header
+version = 5.5
+units = mm
+macro = Workpiece
+cursorLoc = 7
+fluid1Filename = Namics8410-90.flu
+fluid2Filename = 
+heater1Filename = Impingement.htc
+heater2Filename = 
+heater3Filename = 
+heater4Filename = 
+Attach Fluid File = ON
+Attach Heater File = ON
+Valve 1 Refill Mode = At Start Of Prod, Every 1 Run(s)
+Valve 2 Refill Mode = At Start Of Prod, Every 1 Run(s)
+Move to First Fid Location = OFF
+Move To System Location = OFF
+System Location Name = VALVE 1 PURGE LOC
+Set Active Valve = 0
+Batch Fids = ON
+Pipeline Vision = ON
+Find Fids On-the-Fly = OFF
+Use FoF High-Accuracy Mode = OFF
+FoF High-Accuracy Trigger Angle (deg) = 90.000000
+Automatic Conveyor Width = 0.000000
+Automatic Conveyor Width Tolerance = 250.000000
+Automatic Conveyor Width Enabled = OFF
+Automatic Conveyor 2 Width = 0.000000
+Automatic Conveyor 2 Width Tolerance = 250.000000
+Automatic Conveyor 2 Width Enabled = OFF
+CAD Import Generated File = OFF
+Force HS on new pattern (HS SEL Only) = OFF
+Fid Search At Safe Z = ON
+Batch Height Sense Commands = ON
+Batch Height Sense Probe Down = OFF
+Pre-Heat Time = 0
+Apply Camera Rotation Correction = OFF
+Max time board remains at dispense(sec) = 0
+Dual Dispense MFC Tolerance = 0.000000
+Default Runtime Light Level Enabled = OFF
+Default Runtime Light Level 1 = 0
+Default Runtime Light Level 2 = 0
+Default Runtime Light Level 3 = 0
+Map File Control (ON/OFF) = OFF
+Conveyor 1 Mode = -1
+Conveyor 2 Mode = -1
+Dual Valve Key Pattern = 
+Pocket Depth of Carrier = 0.000000
+Substrate Thickness = 0.000000
+Barcode Disable = OFF
+Workpiece Fiducial Failure Mode = 0
+Map Origin Used In Program = 3
+ESR99_015478 Parms = 
+Board Unit Count = 1
+Use Program Max Height Sense Search Depth = OFF
+Program Max Height Sense Search Depth (FMW) = 0.000000
+ADS Program Pitch(mm) = -1.000000
+Unit Counting Pattern = 
+Recipe LMO Mode = 0
+ESR7283540 Heater Monitor Parm List = 
+.end
+.main
+SET HEIGHT SENSE MODE: 1, OnCommand, 0.000, (0.000000, 0.000000), 0.000, (0.000000, 0.000000)
+SET ZFAST MODE: OFF
+DO: Workpiece AT (70430.590989, 50629.293641), 0.000000, 0.000000
+.end
+.proclist
+.endproclist
+.pattlist
+.patt: Workpiece
+.ref frame: 70430.590989, 50629.293641, 0.000000
+.findinfo
+[Two-Fid Frame Find]
+
+.fid1
+[Model Finder]
+Fid Name = Fid 1
+Expected Loc = -20860.011,5169.530,0.000
+Expected Angle (loc degs) = 0.000000
+Owner Name = Workpiece
+Is Valid = ON
+Check Tol = ON
+Use Local Tol = OFF
+Local Tol = 0.000000
+Light Level = 0
+Light 1 Level = 59.706960
+Shutter 1 Open = ON
+Light 1 Pixel Avg = -1.000000
+Light 2 Level = 59.706960
+Shutter 2 Open = ON
+Light 2 Pixel Avg = -1.000000
+Light 3 Level = 59.706960
+Shutter 3 Open = ON
+Light 3 Pixel Avg = -1.000000
+Light 4 Level = 0.000000
+Shutter 4 Open = ON
+Light 4 Pixel Avg = -1.000000
+Light 5 Level = 0.000000
+Shutter 5 Open = ON
+Light 5 Pixel Avg = -1.000000
+Settling Time (msecs) = 50
+Camera Gain (0->12) = 0.000000
+Camera LUT Gamma (0.5->1.5) = 1.000000
+Fiducial Fail Option = 0
+Pause After Search = 1
+Min Fid Acceptance Confidence Level = 80.000000
+Max Fid Acceptance Confidence Level = 0.000000
+Min Fid Prompt Confidence Level = 50.000000
+Use Local Fid-Not-Found Option = 0 
+Num Models = 1
+
+.endfid1
+.fid2
+[Model Finder]
+Fid Name = Fid 2
+Expected Loc = 54304.911,80334.453,0.000
+Expected Angle (loc degs) = 0.000000
+Owner Name = Workpiece
+Is Valid = ON
+Check Tol = ON
+Use Local Tol = OFF
+Local Tol = 0.000000
+Light Level = 0
+Light 1 Level = 59.706960
+Shutter 1 Open = ON
+Light 1 Pixel Avg = -1.000000
+Light 2 Level = 59.706960
+Shutter 2 Open = ON
+Light 2 Pixel Avg = -1.000000
+Light 3 Level = 59.706960
+Shutter 3 Open = ON
+Light 3 Pixel Avg = -1.000000
+Light 4 Level = 0.000000
+Shutter 4 Open = ON
+Light 4 Pixel Avg = -1.000000
+Light 5 Level = 0.000000
+Shutter 5 Open = ON
+Light 5 Pixel Avg = -1.000000
+Settling Time (msecs) = 50
+Camera Gain (0->12) = 0.000000
+Camera LUT Gamma (0.5->1.5) = 1.000000
+Fiducial Fail Option = 0
+Pause After Search = 1
+Min Fid Acceptance Confidence Level = 80.000000
+Max Fid Acceptance Confidence Level = 0.000000
+Min Fid Prompt Confidence Level = 50.000000
+Use Local Fid-Not-Found Option = 0 
+Num Models = 1
+
+.endfid2
+.endfindinfo
+.skipinfo
+
+.endskipinfo
+.substrateidinfo
+.endsubstrateidinfo
+.locinfo
+
+.endlocinfo
+.moduleinfo
+Defines Module IDs = OFF
+.endmoduleinfo
+.fidcontrolinfo
+false
+.endfidcontrolinfo
+LOG COMMENT: Find Height Once Per Wafer
+FIND SUBSTRATE HEIGHT: (16722.449975, 42751.991590)
+LOOP PASS: FROM 1 TO 9 
+STEP AND REPEAT: Wafer Map, (0.000000,0.000000), (33444.899950,0.000000), (0.000000,21375.995795), 1,1,1,1,0,1, [MAP: 0;(0,0);0;0], 0,(0.000000,0.000000), (0.000000,0.000000), (0.000000,0.000000), WRC:1,1,0.000000,0.000000,TBV=0
+LOG COMMENT: Go to next loop
+NEXT LOOP: 
+WAIT: 200.000, Pass 9 timer
+.end
+.patt: Line
+.ref frame: 0.000000, 0.000000, 0.000000
+.findinfo
+
+.endfindinfo
+.skipinfo
+
+.endskipinfo
+.substrateidinfo
+.endsubstrateidinfo
+.locinfo
+
+.endlocinfo
+.moduleinfo
+Defines Module IDs = OFF
+.endmoduleinfo
+.fidcontrolinfo
+false
+.endfidcontrolinfo
+START PASS: FOR PASS 1
+WEIGHT CONTROL: 2,14.010,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,14.010,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 2
+AWAIT MULTIPASS TIMER: 100, Pass 1 timer~100,0
+WEIGHT CONTROL: 2,4.800,2,1,1,1.0000,0,(0.000,-118.110),(3196.852,-118.110),1,
+WEIGHT CONTROL: 2,12.070,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,4.800,2,1,1,1.0000,0,(0.000,20561.113),(3196.852,20561.113),1,
+WEIGHT CONTROL: 2,4.800,2,1,1,1.0000,0,(32464.584,20561.113),(29267.732,20561.113),1,
+WEIGHT CONTROL: 2,12.070,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+WEIGHT CONTROL: 2,4.800,2,1,1,1.0000,0,(32464.584,-118.110),(29267.732,-118.110),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 3
+AWAIT MULTIPASS TIMER: 150, Pass 2 timer~150,0
+WEIGHT CONTROL: 2,12.070,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,12.070,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 4
+AWAIT MULTIPASS TIMER: 200, Pass 3 timer~200,0
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(3248.033,671.260),(7553.154,671.260),1,
+WEIGHT CONTROL: 2,12.070,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(3248.033,19771.743),(7553.154,19771.743),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(29216.551,19771.743),(24911.431,19771.743),1,
+WEIGHT CONTROL: 2,12.070,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(29216.551,671.260),(24911.431,671.260),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 5
+AWAIT MULTIPASS TIMER: 200, Pass 4 timer~200,0
+WEIGHT CONTROL: 2,10.930,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,10.930,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 6
+AWAIT MULTIPASS TIMER: 250, Pass 5 timer~250,0
+WEIGHT CONTROL: 2,10.930,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,10.930,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 7
+AWAIT MULTIPASS TIMER: 250, Pass 6 timer~250,0
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(5400.593,671.260),(9733.273,671.260),1,
+WEIGHT CONTROL: 2,10.930,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(5400.593,19771.743),(9733.273,19771.743),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(27063.991,19771.743),(22731.311,19771.743),1,
+WEIGHT CONTROL: 2,10.930,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(27063.991,671.260),(22731.311,671.260),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 8
+AWAIT MULTIPASS TIMER: 200, Pass 7 timer~200,0
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(7580.713,671.260),(11885.833,671.260),1,
+WEIGHT CONTROL: 2,5.010,1,1,1,1.0000,0,(-118.110,5736.224),(-118.110,14706.780),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(7580.713,19771.743),(11885.833,19771.743),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(24883.872,19771.743),(20578.751,19771.743),1,
+WEIGHT CONTROL: 2,5.010,1,1,1,1.0000,0,(32582.695,14706.780),(32582.695,5736.224),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(24883.872,671.260),(20578.751,671.260),1,
+RESET MULTIPASS TIMER: 
+END PASS:
+START PASS: FOR PASS 9
+AWAIT MULTIPASS TIMER: 300, Pass 8 timer~300,0
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(9733.273,671.260),(14065.952,671.260),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(9733.273,19771.743),(14065.952,19771.743),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(22731.311,19771.743),(18398.632,19771.743),1,
+WEIGHT CONTROL: 2,7.500,2,1,1,1.0000,0,(22731.311,671.260),(18398.632,671.260),1,
+END PASS:
+COMMENT: End of Customer Coords.
+.end
+.end
+.endpattlist
+.prefid
+.end
