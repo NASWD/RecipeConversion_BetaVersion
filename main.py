@@ -5,11 +5,11 @@ import sys
 from views.trial_manager import is_trial_expired
 
 
-app = QApplication(sys.argv)
+#app = QApplication(sys.argv)
 
-if is_trial_expired():
-    QMessageBox.critical(None, "Trial Expired", "Your 14-day trial has ended.")
-    sys.exit(0)
+#if is_trial_expired():
+#    QMessageBox.critical(None, "Trial Expired", "Your 14-day trial has ended.")
+#    sys.exit(0)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
